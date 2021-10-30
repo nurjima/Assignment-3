@@ -1,0 +1,12 @@
+CREATE TABLE userr (
+	id int primary key, 
+	login varchar(50) NOT NULL, 
+	password varchar(50) NOT NULL, 
+	token varchar(50), 
+	PRIMARY KEY (id)
+);
+
+INSERT INTO userr VALUES (1, 'hello', 'hello123', null);
+INSERT INTO userr VALUES (2, 'bye', 'byebye123', null);
+INSERT INTO userr VALUES (3, 'python', 'wowhello', null);
+INSERT INTO userr VALUES (4, 'maybe', 'youarenothere', null);
