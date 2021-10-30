@@ -45,6 +45,16 @@ def token_required(f):
     return decorated
 
 
+@app.route('/user', methods=['POST'])
+def create_user():
+    data = request.get_json()
+    new_user = User(id=data['id'], login=data['login'], password=data['password'], token=data['token'])
+    db.session.add(new_user)
+    db.session.commit()
+
+    return jsonify({'message': 'You created the new user!'})
+
+
 @app.route('/protected')
 @token_required
 def protected():
