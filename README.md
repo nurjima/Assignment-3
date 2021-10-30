@@ -4,14 +4,21 @@ As a database you can use any SQL database *(postgresql, mysql, sqlite)*
 Database needs have at least one Table with name User, and columns: id, login, password, token. 
 
 
-## Installing packages
+## Installation
 Install with pip:
 ```
-$ pip install PyJWT
-
-$ pip install Flask
-
-$ pip install -U Flask-SQLAlchemy
+pip install requirements.txt
 ```
 ***Note:** If you are a Mac User add 3, after keyword pip*
 
+## Usage
+
+### MacOS
+```
+python assignment.py
+```
+
+### Windows
+```
+python assignment.txt
+```
