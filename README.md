@@ -8,8 +8,18 @@ Done by Shaliyeva Nurzhamal from SE-2012 and Shamshidin Sabina from SE-2008
 
 ## Installation
 Install with pip:
+#### pyjwt
 ```
-pip install requirements.txt
+$ pip install pyjwt
+```
+#### flask
+```
+$ pip install Flask
+```
+
+#### flask_sqlalchemy 
+```
+$ pip install -U Flask-SQLAlchemy
 ```
 ***Note:** If you are a Mac User add 3, after keyword pip*
 
