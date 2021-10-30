@@ -25,7 +25,7 @@ python assignment.py
 python assignment.txt
 ```
 
-## Requests
+## Examples
 #### User login:
 ```
 http://127.0.0.1:5000/login
