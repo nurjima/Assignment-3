@@ -59,7 +59,8 @@ def login():
         return make_response('There is no such users: ' + auth.username, 401)
 
     if user.password == auth.password:
-        token = jwt.encode({'public_id': user.id, 'exp': datetime.utcnow() + timedelta(minutes=30)}, app.config['SECRET_KEY'])
+        token = jwt.encode({'user': auth.username, 'exp': datetime.utcnow() + timedelta(minutes=30)}, app.config['SECRET_KEY'])
+
         user.token = token
         return jsonify({'token': token})
 
